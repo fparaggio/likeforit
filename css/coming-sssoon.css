@@ -39,7 +39,7 @@ body{
   padding-bottom: 30px;
   padding-top: 280px;
   background: url("../images/molesk.png") no-repeat;
-
+  position: absolute;
   top: 10%;
   left: 5%;
   width: 500px;
