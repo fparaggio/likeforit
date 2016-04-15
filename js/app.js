@@ -5,8 +5,12 @@ function changeLuigi(oldImageUrl,newImageUrl){
   var img = new Image();
   if (oldimg[0].src.indexOf(oldImageUrl)> -1){
     img.src = newImageUrl;
+    img.style.zIndex = 9999999999999999;
+    img.style.position = "absolute";
   } else {
     img.src = oldImageUrl;
+    img.style.zIndex = 9999999999999999;
+    img.style.position = "absolute";
   }
 
   $("#luigi-container img").css({ "height": oldimg[0].height});

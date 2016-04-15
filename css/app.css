@@ -276,15 +276,21 @@
 
 /* Portrait */
 @media screen and (orientation:portrait) {
-
+ .portrait-resp-container {
+   height: 150vh;
+   overflow-x: hidden;
+ }
   .portrait-resp {
-   height: 150% !important;
+  /* height: 150% !important;
    width: auto !important;
    max-height: 150%;
    overflow: hidden;
-   /* overflow:hidden; */
    position:center;
-   object-fit: none; 
+   object-fit: none; */
+   display:block ;
+   height: 100% !important;
+   width: auto !important;
+   overflow-x: hidden;
   }
   .sketch-ballon {
     margin-right: 17.5% !important;
@@ -299,6 +305,10 @@
       font-family: 'barrioregular';
       font-size: large;
     }
+
+      #moleskine {
+        z-index:80 !important;
+      }
 
     #moleskine h1 {
       font-size: large !important;
